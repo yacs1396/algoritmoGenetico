@@ -1,2 +1,0 @@
-# algoritmoGenetico
-algoritmo para tesis
