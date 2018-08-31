@@ -588,7 +588,8 @@ public class Genetico {
         calcularFitnessLista(nuevaGeneracion);
         ordenarListaPorMenorFitness(nuevaGeneracion);
         int tamLista = nuevaGeneracion.size();
-        for(int i=tamLista/2;i<tamLista;i++){
+        int indiceMutacion = tamLista -  Math.round(tamLista*probabilidadMutacion);
+        for(int i=indiceMutacion;i<tamLista;i++){
             Cromosoma cromosoma = nuevaGeneracion.get(i);
             Cromosoma cromosomaMutado = mutacionCromosoma(cromosoma);
             if(cromosomaMutado!=null){

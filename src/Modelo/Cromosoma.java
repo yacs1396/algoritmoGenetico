@@ -144,10 +144,6 @@ public class Cromosoma {
             }else{
                 int idPieza = Integer.parseInt(gen);
                 Rectangulo pieza = buscarPieza(listaPiezas,idPieza);
-//                Rectangulo pieza = new Rectangulo();
-//                pieza.setId(Integer.parseInt(gen));
-//                pieza.setAlto(5.0);
-//                pieza.setAncho(5.0);
                 nodo.setRectangulo(pieza);
                 nodo.setTipoIntegracion(null);
                 nodo.setArea(pieza.getAlto()*pieza.getAncho());

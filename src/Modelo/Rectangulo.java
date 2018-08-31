@@ -6,6 +6,7 @@ public class Rectangulo {
     private Double y = 0.0;
     private Double ancho;
     private Double alto;
+    private boolean rotacion;
 
     public Rectangulo(){
 
@@ -57,5 +58,13 @@ public class Rectangulo {
 
     public void setAlto(Double alto) {
         this.alto = alto;
+    }
+
+    public boolean isRotacion() {
+        return rotacion;
+    }
+
+    public void setRotacion(boolean rotacion) {
+        this.rotacion = rotacion;
     }
 }

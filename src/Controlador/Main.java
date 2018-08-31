@@ -50,7 +50,7 @@ public class Main {
 
 
         Genetico genetico = new Genetico(listaStock,listaPiezas);
-        Cromosoma cromosoma = genetico.realizarAlgoritmo(5,1,2);
+        Cromosoma cromosoma = genetico.realizarAlgoritmo(5,(float) 0.5,2);
         List<Stock> stockDistribuidoLista = genetico.llenarStockDistribuido(cromosoma);
         System.out.println("SOL: "+cromosoma.getListaGenes());
 
