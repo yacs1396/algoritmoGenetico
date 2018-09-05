@@ -154,8 +154,22 @@ public class Cromosoma {
                 area = nodoDerecho.getArea();
                 area += nodoIzquierdo.getArea();
                 nodo.setArea(area);
-                nodo.setAlto(nodoDerecho.getAlto() + nodoIzquierdo.getAlto());
-                nodo.setAncho(nodoDerecho.getAncho() + nodoIzquierdo.getAncho());
+                Double alto;
+                if(nodoDerecho.getAlto() > nodoIzquierdo.getAlto()){
+                    alto = nodoDerecho.getAlto();
+                }else{
+                    alto = nodoIzquierdo.getAlto();
+                }
+
+                Double ancho;
+                if(nodoDerecho.getAncho() > nodoIzquierdo.getAncho()){
+                    ancho = nodoDerecho.getAncho();
+                }else{
+                    ancho = nodoIzquierdo.getAncho();
+                }
+
+                nodo.setAlto(alto);
+                nodo.setAncho(ancho);
                 nodo.setIzquierdo(nodoIzquierdo);
                 nodo.setDerecho(nodoDerecho);
                 pilaNodos.push(nodo);
