@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd8fc328-2b94-46aa-ab8d-1c713d51cf28" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controlador/Genetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controlador/Genetico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controlador/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controlador/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelo/Constantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Constantes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modelo/Cromosoma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Cromosoma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modelo/Rectangulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Rectangulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelo/Nodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Nodo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,10 +22,12 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controlador/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-116">
-              <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+            <state relative-caret-position="789">
+              <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#676#683#0" expanded="true" />
+                <element signature="e#1208#1220#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -34,29 +36,28 @@
       <file leaf-file-name="Genetico.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controlador/Genetico.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="586" column="28" selection-start-line="586" selection-start-column="28" selection-end-line="586" selection-end-column="28" />
+            <state relative-caret-position="294">
+              <caret line="285" column="13" lean-forward="true" selection-start-line="285" selection-start-column="13" selection-end-line="285" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#crearPiezaPrueba#0;class#Genetico#0" />
                 <element signature="method#agregarPieza#0;class#Genetico#0" />
                 <element signature="method#añadirOperadorAleatoriaCromosoma#0;class#Genetico#0" />
                 <element signature="method#seleccionAleatoriaEsPieza#0;class#Genetico#0" />
-                <element signature="e#6138#6149#0" expanded="true" />
                 <element signature="method#ordenarNodosPorArea#0;class#Genetico#0" />
                 <element signature="method#ordenarStockPorArea#0;class#Genetico#0" />
                 <element signature="method#eliminarSubArboles#0;class#Genetico#0" />
-                <element signature="e#7640#7646#0" expanded="true" />
-                <element signature="e#8330#8337#0" expanded="true" />
-                <element signature="e#9244#9251#0" expanded="true" />
-                <element signature="e#10449#10460#0" expanded="true" />
-                <element signature="e#12027#12036#0" expanded="true" />
-                <element signature="e#12096#12105#0" expanded="true" />
-                <element signature="e#14881#14889#0" expanded="true" />
-                <element signature="e#14958#14966#0" expanded="true" />
-                <element signature="e#18666#18677#0" expanded="true" />
                 <element signature="method#intercambiarGenes#0;class#Genetico#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumberFormatException.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/NumberFormatException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
             </state>
           </provider>
         </entry>
@@ -64,7 +65,7 @@
       <file leaf-file-name="Stock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modelo/Stock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="91">
               <caret line="6" selection-start-line="6" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
@@ -73,12 +74,14 @@
       <file leaf-file-name="Cromosoma.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modelo/Cromosoma.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="145" column="68" selection-start-line="145" selection-start-column="68" selection-end-line="145" selection-end-column="68" />
+            <state relative-caret-position="141">
+              <caret line="142" column="12" lean-forward="true" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1013#1014#0" expanded="true" />
                 <element signature="e#1055#1056#0" expanded="true" />
+                <element signature="e#6472#6473#0" expanded="true" />
+                <element signature="e#6522#6523#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,8 +90,8 @@
       <file leaf-file-name="Nodo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modelo/Nodo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="24" selection-start-line="4" selection-start-column="12" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="748">
+              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
               <folding>
                 <element signature="e#912#913#0" expanded="true" />
                 <element signature="e#939#940#0" expanded="true" />
@@ -98,6 +101,14 @@
                 <element signature="e#1070#1071#0" expanded="true" />
                 <element signature="e#1111#1112#0" expanded="true" />
                 <element signature="e#1147#1148#0" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
+                <element signature="e#1258#1259#0" expanded="true" />
+                <element signature="e#1300#1301#0" expanded="true" />
+                <element signature="e#1334#1335#0" expanded="true" />
+                <element signature="e#1365#1366#0" expanded="true" />
+                <element signature="e#1392#1393#0" expanded="true" />
+                <element signature="e#1432#1433#0" expanded="true" />
+                <element signature="e#1464#1465#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,14 +117,8 @@
       <file leaf-file-name="Rectangulo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modelo/Rectangulo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
+            <state relative-caret-position="683">
               <caret line="61" selection-start-line="61" selection-end-line="61" />
-              <folding>
-                <element signature="e#1053#1054#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
-                <element signature="e#1133#1134#0" expanded="true" />
-                <element signature="e#1173#1174#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -121,8 +126,8 @@
       <file leaf-file-name="Constantes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modelo/Constantes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="44" />
+            <state relative-caret-position="153">
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -152,13 +157,22 @@
       <find>añadirPiezaAleatoriaCromosoma</find>
       <find>i</find>
       <find>primerCorte</find>
-      <find>separarPiezas</find>
       <find>reali</find>
       <find>stock</find>
       <find>numeroPiezas</find>
       <find>mutacion</find>
       <find>tamaño</find>
       <find>tamanho</find>
+      <find>Math.random() &lt; 0.5</find>
+      <find>isnum</find>
+      <find>separarPiezas</find>
+      <find>isNumeric</find>
+      <find>No se encontro ninguna pieza con el id</find>
+      <find>buscarPieza</find>
+      <find>charat</find>
+      <find>char</find>
+      <find>ROTACION_HORIZONTAL</find>
+      <find>ID:</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,13 +182,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Modelo/Modelo.java" />
-        <option value="$PROJECT_DIR$/src/Modelo/Nodo.java" />
-        <option value="$PROJECT_DIR$/src/Modelo/Constantes.java" />
         <option value="$PROJECT_DIR$/src/Modelo/Stock.java" />
         <option value="$PROJECT_DIR$/src/Modelo/Poblacion.java" />
         <option value="$PROJECT_DIR$/src/Modelo/Rectangulo.java" />
-        <option value="$PROJECT_DIR$/src/Modelo/Cromosoma.java" />
+        <option value="$PROJECT_DIR$/src/Modelo/Nodo.java" />
+        <option value="$PROJECT_DIR$/src/Modelo/Constantes.java" />
         <option value="$PROJECT_DIR$/src/Controlador/Genetico.java" />
+        <option value="$PROJECT_DIR$/src/Modelo/Cromosoma.java" />
         <option value="$PROJECT_DIR$/src/Controlador/Main.java" />
       </list>
     </option>
@@ -328,7 +342,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16893733" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16825613" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -346,14 +360,14 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34640524" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16943292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34640524" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -380,13 +394,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Modelo/Poblacion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controlador/Genetico.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9095">
@@ -397,19 +404,9 @@
             <element signature="method#agregarPieza#0;class#Genetico#0" />
             <element signature="method#añadirOperadorAleatoriaCromosoma#0;class#Genetico#0" />
             <element signature="method#seleccionAleatoriaEsPieza#0;class#Genetico#0" />
-            <element signature="e#6138#6149#0" expanded="true" />
             <element signature="method#ordenarNodosPorArea#0;class#Genetico#0" />
             <element signature="method#ordenarStockPorArea#0;class#Genetico#0" />
             <element signature="method#eliminarSubArboles#0;class#Genetico#0" />
-            <element signature="e#7640#7646#0" expanded="true" />
-            <element signature="e#8330#8337#0" expanded="true" />
-            <element signature="e#9244#9251#0" expanded="true" />
-            <element signature="e#10449#10460#0" expanded="true" />
-            <element signature="e#12027#12036#0" expanded="true" />
-            <element signature="e#12096#12105#0" expanded="true" />
-            <element signature="e#14881#14889#0" expanded="true" />
-            <element signature="e#14958#14966#0" expanded="true" />
-            <element signature="e#18666#18677#0" expanded="true" />
             <element signature="method#intercambiarGenes#0;class#Genetico#0" />
           </folding>
         </state>
@@ -421,6 +418,8 @@
           <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#676#683#0" expanded="true" />
+            <element signature="e#1208#1220#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -435,19 +434,9 @@
             <element signature="method#agregarPieza#0;class#Genetico#0" />
             <element signature="method#añadirOperadorAleatoriaCromosoma#0;class#Genetico#0" />
             <element signature="method#seleccionAleatoriaEsPieza#0;class#Genetico#0" />
-            <element signature="e#6138#6149#0" expanded="true" />
             <element signature="method#ordenarNodosPorArea#0;class#Genetico#0" />
             <element signature="method#ordenarStockPorArea#0;class#Genetico#0" />
             <element signature="method#eliminarSubArboles#0;class#Genetico#0" />
-            <element signature="e#7640#7646#0" expanded="true" />
-            <element signature="e#8330#8337#0" expanded="true" />
-            <element signature="e#9244#9251#0" expanded="true" />
-            <element signature="e#10449#10460#0" expanded="true" />
-            <element signature="e#12027#12036#0" expanded="true" />
-            <element signature="e#12096#12105#0" expanded="true" />
-            <element signature="e#14881#14889#0" expanded="true" />
-            <element signature="e#14958#14966#0" expanded="true" />
-            <element signature="e#18666#18677#0" expanded="true" />
             <element signature="method#intercambiarGenes#0;class#Genetico#0" />
           </folding>
         </state>
@@ -487,6 +476,14 @@
             <element signature="e#1070#1071#0" expanded="true" />
             <element signature="e#1111#1112#0" expanded="true" />
             <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -506,6 +503,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1013#1014#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#6472#6473#0" expanded="true" />
+            <element signature="e#6522#6523#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -516,6 +515,8 @@
           <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#676#683#0" expanded="true" />
+            <element signature="e#1208#1220#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -535,6 +536,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1013#1014#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#6472#6473#0" expanded="true" />
+            <element signature="e#6522#6523#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -566,6 +569,14 @@
             <element signature="e#1070#1071#0" expanded="true" />
             <element signature="e#1111#1112#0" expanded="true" />
             <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -587,19 +598,9 @@
             <element signature="method#agregarPieza#0;class#Genetico#0" />
             <element signature="method#añadirOperadorAleatoriaCromosoma#0;class#Genetico#0" />
             <element signature="method#seleccionAleatoriaEsPieza#0;class#Genetico#0" />
-            <element signature="e#6138#6149#0" expanded="true" />
             <element signature="method#ordenarNodosPorArea#0;class#Genetico#0" />
             <element signature="method#ordenarStockPorArea#0;class#Genetico#0" />
             <element signature="method#eliminarSubArboles#0;class#Genetico#0" />
-            <element signature="e#7640#7646#0" expanded="true" />
-            <element signature="e#8330#8337#0" expanded="true" />
-            <element signature="e#9244#9251#0" expanded="true" />
-            <element signature="e#10449#10460#0" expanded="true" />
-            <element signature="e#12027#12036#0" expanded="true" />
-            <element signature="e#12096#12105#0" expanded="true" />
-            <element signature="e#14881#14889#0" expanded="true" />
-            <element signature="e#14958#14966#0" expanded="true" />
-            <element signature="e#18666#18677#0" expanded="true" />
             <element signature="method#intercambiarGenes#0;class#Genetico#0" />
           </folding>
         </state>
@@ -610,6 +611,8 @@
         <state>
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#676#683#0" expanded="true" />
+            <element signature="e#1208#1220#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -624,19 +627,9 @@
             <element signature="method#agregarPieza#0;class#Genetico#0" />
             <element signature="method#añadirOperadorAleatoriaCromosoma#0;class#Genetico#0" />
             <element signature="method#seleccionAleatoriaEsPieza#0;class#Genetico#0" />
-            <element signature="e#6138#6149#0" expanded="true" />
             <element signature="method#ordenarNodosPorArea#0;class#Genetico#0" />
             <element signature="method#ordenarStockPorArea#0;class#Genetico#0" />
             <element signature="method#eliminarSubArboles#0;class#Genetico#0" />
-            <element signature="e#7640#7646#0" expanded="true" />
-            <element signature="e#8330#8337#0" expanded="true" />
-            <element signature="e#9244#9251#0" expanded="true" />
-            <element signature="e#10449#10460#0" expanded="true" />
-            <element signature="e#12027#12036#0" expanded="true" />
-            <element signature="e#12096#12105#0" expanded="true" />
-            <element signature="e#14881#14889#0" expanded="true" />
-            <element signature="e#14958#14966#0" expanded="true" />
-            <element signature="e#18666#18677#0" expanded="true" />
             <element signature="method#intercambiarGenes#0;class#Genetico#0" />
           </folding>
         </state>
@@ -657,6 +650,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1013#1014#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#6472#6473#0" expanded="true" />
+            <element signature="e#6522#6523#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -688,6 +683,14 @@
             <element signature="e#1070#1071#0" expanded="true" />
             <element signature="e#1111#1112#0" expanded="true" />
             <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -705,6 +708,8 @@
           <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#676#683#0" expanded="true" />
+            <element signature="e#1208#1220#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -724,6 +729,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1013#1014#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#6472#6473#0" expanded="true" />
+            <element signature="e#6522#6523#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -755,6 +762,14 @@
             <element signature="e#1070#1071#0" expanded="true" />
             <element signature="e#1111#1112#0" expanded="true" />
             <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -776,19 +791,9 @@
             <element signature="method#agregarPieza#0;class#Genetico#0" />
             <element signature="method#añadirOperadorAleatoriaCromosoma#0;class#Genetico#0" />
             <element signature="method#seleccionAleatoriaEsPieza#0;class#Genetico#0" />
-            <element signature="e#6138#6149#0" expanded="true" />
             <element signature="method#ordenarNodosPorArea#0;class#Genetico#0" />
             <element signature="method#ordenarStockPorArea#0;class#Genetico#0" />
             <element signature="method#eliminarSubArboles#0;class#Genetico#0" />
-            <element signature="e#7640#7646#0" expanded="true" />
-            <element signature="e#8330#8337#0" expanded="true" />
-            <element signature="e#9244#9251#0" expanded="true" />
-            <element signature="e#10449#10460#0" expanded="true" />
-            <element signature="e#12027#12036#0" expanded="true" />
-            <element signature="e#12096#12105#0" expanded="true" />
-            <element signature="e#14881#14889#0" expanded="true" />
-            <element signature="e#14958#14966#0" expanded="true" />
-            <element signature="e#18666#18677#0" expanded="true" />
             <element signature="method#intercambiarGenes#0;class#Genetico#0" />
           </folding>
         </state>
@@ -800,6 +805,8 @@
           <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#676#683#0" expanded="true" />
+            <element signature="e#1208#1220#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -819,6 +826,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1013#1014#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#6472#6473#0" expanded="true" />
+            <element signature="e#6522#6523#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -850,6 +859,14 @@
             <element signature="e#1070#1071#0" expanded="true" />
             <element signature="e#1111#1112#0" expanded="true" />
             <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -871,32 +888,15 @@
             <element signature="method#agregarPieza#0;class#Genetico#0" />
             <element signature="method#añadirOperadorAleatoriaCromosoma#0;class#Genetico#0" />
             <element signature="method#seleccionAleatoriaEsPieza#0;class#Genetico#0" />
-            <element signature="e#6138#6149#0" expanded="true" />
             <element signature="method#ordenarNodosPorArea#0;class#Genetico#0" />
             <element signature="method#ordenarStockPorArea#0;class#Genetico#0" />
             <element signature="method#eliminarSubArboles#0;class#Genetico#0" />
-            <element signature="e#7640#7646#0" expanded="true" />
-            <element signature="e#8330#8337#0" expanded="true" />
-            <element signature="e#9244#9251#0" expanded="true" />
-            <element signature="e#10449#10460#0" expanded="true" />
-            <element signature="e#12027#12036#0" expanded="true" />
-            <element signature="e#12096#12105#0" expanded="true" />
-            <element signature="e#14881#14889#0" expanded="true" />
-            <element signature="e#14958#14966#0" expanded="true" />
-            <element signature="e#18666#18677#0" expanded="true" />
             <element signature="method#intercambiarGenes#0;class#Genetico#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Modelo/Modelo.java" />
-    <entry file="file://$PROJECT_DIR$/src/Modelo/Constantes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Modelo/Poblacion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -906,15 +906,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Modelo/Stock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="91">
           <caret line="6" selection-start-line="6" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Rectangulo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Modelo/Nodo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" selection-start-line="4" selection-start-column="12" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="748">
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding>
             <element signature="e#912#913#0" expanded="true" />
             <element signature="e#939#940#0" expanded="true" />
@@ -924,68 +931,71 @@
             <element signature="e#1070#1071#0" expanded="true" />
             <element signature="e#1111#1112#0" expanded="true" />
             <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modelo/Rectangulo.java">
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Constantes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Modelo/Cromosoma.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="145" column="68" selection-start-line="145" selection-start-column="68" selection-end-line="145" selection-end-column="68" />
+        <state relative-caret-position="141">
+          <caret line="142" column="12" lean-forward="true" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1013#1014#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#6472#6473#0" expanded="true" />
+            <element signature="e#6522#6523#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controlador/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+        <state relative-caret-position="789">
+          <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#676#683#0" expanded="true" />
+            <element signature="e#1208#1220#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controlador/Genetico.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="586" column="28" selection-start-line="586" selection-start-column="28" selection-end-line="586" selection-end-column="28" />
+        <state relative-caret-position="294">
+          <caret line="285" column="13" lean-forward="true" selection-start-line="285" selection-start-column="13" selection-end-line="285" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#crearPiezaPrueba#0;class#Genetico#0" />
             <element signature="method#agregarPieza#0;class#Genetico#0" />
             <element signature="method#añadirOperadorAleatoriaCromosoma#0;class#Genetico#0" />
             <element signature="method#seleccionAleatoriaEsPieza#0;class#Genetico#0" />
-            <element signature="e#6138#6149#0" expanded="true" />
             <element signature="method#ordenarNodosPorArea#0;class#Genetico#0" />
             <element signature="method#ordenarStockPorArea#0;class#Genetico#0" />
             <element signature="method#eliminarSubArboles#0;class#Genetico#0" />
-            <element signature="e#7640#7646#0" expanded="true" />
-            <element signature="e#8330#8337#0" expanded="true" />
-            <element signature="e#9244#9251#0" expanded="true" />
-            <element signature="e#10449#10460#0" expanded="true" />
-            <element signature="e#12027#12036#0" expanded="true" />
-            <element signature="e#12096#12105#0" expanded="true" />
-            <element signature="e#14881#14889#0" expanded="true" />
-            <element signature="e#14958#14966#0" expanded="true" />
-            <element signature="e#18666#18677#0" expanded="true" />
             <element signature="method#intercambiarGenes#0;class#Genetico#0" />
           </folding>
         </state>

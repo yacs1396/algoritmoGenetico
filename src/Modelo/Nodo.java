@@ -8,6 +8,8 @@ public class Nodo {
     private Rectangulo rectangulo;
     private String tipoIntegracion;
     private Double area;
+    private Double ancho;
+    private Double alto;
 
 
     public Nodo getIzquierdo() {
@@ -56,5 +58,21 @@ public class Nodo {
 
     public void setIdNodo(int idNodo) {
         this.idNodo = idNodo;
+    }
+
+    public Double getAncho() {
+        return ancho;
+    }
+
+    public void setAncho(Double ancho) {
+        this.ancho = ancho;
+    }
+
+    public Double getAlto() {
+        return alto;
+    }
+
+    public void setAlto(Double alto) {
+        this.alto = alto;
     }
 }

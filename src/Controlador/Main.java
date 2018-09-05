@@ -57,6 +57,7 @@ public class Main {
         for(Stock stockDistribuido: stockDistribuidoLista){
             System.out.print("Stock Ancho: "+stockDistribuido.getAncho()+" Stock Alto: "+stockDistribuido.getAlto());
             System.out.print(" Area usada: "+stockDistribuido.getBloqueUsado().getArea());
+            System.out.print(" ID Nodo: "+stockDistribuido.getBloqueUsado().getIdNodo());
             System.out.println("");
         }
 //        Cromosoma cromosoma = new Cromosoma();

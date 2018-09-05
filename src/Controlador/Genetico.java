@@ -3,13 +3,13 @@ package Controlador;
 import Modelo.*;
 import org.w3c.dom.css.Rect;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
-import static Modelo.Constantes.ESPACIO_PIEZA_VACIA;
-import static Modelo.Constantes.MAXIMA_GENERACION;
+import static Modelo.Constantes.*;
 
 public class Genetico {
 
@@ -23,8 +23,8 @@ public class Genetico {
 
     public Genetico(List<Stock> listaStock,List<Rectangulo> listaPiezas){
         listaOperadores = new ArrayList<String>();
-        listaOperadores.add("H");
-        listaOperadores.add("V");
+        listaOperadores.add(ROTACION_HORIZONTAL);
+        listaOperadores.add(ROTACION_VERTICAL);
 
         listaDecision= new ArrayList<String>();
         listaDecision.add(DECISION_PIEZA);
@@ -103,7 +103,10 @@ public class Genetico {
 
     private Rectangulo obtenerPiezaAleatoria(List<Rectangulo> listaPiezas){
         try{
-            Rectangulo  pieza =  listaPiezas.get((new Random()).nextInt(listaPiezas.size()));
+            System.out.println("Long lista: "+listaPiezas.size());
+            int indiceRandom = (new Random()).nextInt(listaPiezas.size());
+            System.out.println("Long Lista: "+ listaPiezas.size()+ " indiceRandom: "+indiceRandom);
+            Rectangulo  pieza =  listaPiezas.get(indiceRandom);
             listaPiezas.remove(pieza);
             return pieza;
         }catch (Exception e){
@@ -113,12 +116,28 @@ public class Genetico {
     }
 
     private void añadirPiezaAleatoriaCromosoma(List<Rectangulo> listaPiezas, Cromosoma cromosoma){
+
         Rectangulo piezaAleatoria = obtenerPiezaAleatoria(listaPiezas);
         if(piezaAleatoria == null){
             System.out.println("Error al obtener pieza aleatoria");
         }
         int idPieza = piezaAleatoria.getId();
-        cromosoma.añadirGen(""+idPieza);
+        boolean rotacion = Math.random() < 0.5;
+        System.out.println("ROTACION: "+ rotacion+"id: "+idPieza);
+        String gen = ""+idPieza;
+        if(rotacion){
+            gen += ROTACION;
+
+//            System.out.println("mmmmmmmmmmmmmmmmmmmmmm");
+//            if(gen.contains(ROTACION)){
+//                String [] arrayGen = "7".split(ROTACION);
+//                for(int i= 0; i<arrayGen.length ;i++){
+//                    System.out.println("spliteado "+i+" valor: "+arrayGen[i]);
+//                }
+//            }
+
+        }
+        cromosoma.añadirGen(gen);
     }
 
     private void añadirOperadorAleatoriaCromosoma(Cromosoma cromosoma){
@@ -167,6 +186,8 @@ public class Genetico {
         for(int i= 3; i<= longitudCromosoma;i++){
             int cantidadPiezas = cromosoma.cantidadPiezas();
             int cantidadOperadores = cromosoma.cantidadOperadores();
+            System.out.println("cantidad Piezas: "+cantidadPiezas+" cantidadOperadores: "+cantidadOperadores);
+            System.out.println("www genes: "+cromosoma.getListaGenes());
             if(cantidadOperadores == cantidadPiezas-1){
                 añadirPiezaAleatoriaCromosoma(listaPiezas,cromosoma);
             }else{
@@ -257,7 +278,7 @@ public class Genetico {
         while(!listaNodos.isEmpty()){
             Nodo nodo = listaNodos.get(0);
             Stock stock = listaStock.get(nroStock);
-            if(nodo.getArea() <= stock.getArea()){
+            if((nodo.getArea() <= stock.getArea()) && (stock.getAlto() >= nodo.getAlto()) && (stock.getAncho() >= nodo.getAncho())){
                 stock.setBloqueUsado(nodo);
                 listaStockNuevo.add(stock);
                 listaNodos = eliminarSubArboles(listaNodos,nodo,cromosoma);
@@ -357,28 +378,28 @@ public class Genetico {
         List<Integer> listaRepetidaProg2 = new ArrayList<Integer>();
         for(int i=0; i<tamPiezasIntercambio;i++){
             for(int j= 0; j <primerCorte;j++){
-                String piezaProg1 = piezasIntercambioProgenitor1.get(i);
-                if(piezaProg1.equalsIgnoreCase(listaPiezasProgenitor1.get(j))){
+                String piezaProg1 = piezasIntercambioProgenitor1.get(i).split(ROTACION)[0];
+                if(piezaProg1.equalsIgnoreCase(listaPiezasProgenitor1.get(j).split(ROTACION)[0])){
                     listaRepetidaProg1.add(j);
                 }
 
 
-                String piezaProg2 = piezasIntercambioProgenitor2.get(i);
-                if(piezaProg2.equalsIgnoreCase(listaPiezasProgenitor2.get(j))){
+                String piezaProg2 = piezasIntercambioProgenitor2.get(i).split(ROTACION)[0];
+                if(piezaProg2.equalsIgnoreCase(listaPiezasProgenitor2.get(j).split(ROTACION)[0])){
                     listaRepetidaProg2.add(j);
                 }
             }
 
             //porque la posicion del segundo corte es parte de las piezas de intercambio
             for(int j= segundoCorte+1; j < listaPiezasProgenitor1.size();j++){
-                String piezaProg1 = piezasIntercambioProgenitor1.get(i);
-                if(piezaProg1.equalsIgnoreCase(listaPiezasProgenitor1.get(j))){
+                String piezaProg1 = piezasIntercambioProgenitor1.get(i).split(ROTACION)[0];
+                if(piezaProg1.equalsIgnoreCase(listaPiezasProgenitor1.get(j).split(ROTACION)[0])){
                     listaRepetidaProg1.add(j);
                 }
 
 
-                String piezaProg2 = piezasIntercambioProgenitor2.get(i);
-                if(piezaProg2.equalsIgnoreCase(listaPiezasProgenitor2.get(j))){
+                String piezaProg2 = piezasIntercambioProgenitor2.get(i).split(ROTACION)[0];
+                if(piezaProg2.equalsIgnoreCase(listaPiezasProgenitor2.get(j).split(ROTACION)[0])){
                     listaRepetidaProg2.add(j);
                 }
             }
@@ -479,6 +500,13 @@ public class Genetico {
 
 
         System.out.println("###############################################");
+
+
+        System.out.println("Prog 1: "+listaPiezasProgenitor1);
+        System.out.println("Prog 2: "+listaPiezasProgenitor2);
+
+        System.out.println("Prog 1 sin piezas: "+listaSinPiezasProgenitor1);
+        System.out.println("Prog 2 sin piezas: "+listaSinPiezasProgenitor2);
         System.out.println("Tam Prog1 Antes: "+listaPiezasProgenitor1.size());
         System.out.println("Tam Prog2 Antes: "+listaPiezasProgenitor2.size());
         intercambiarPiezas(listaPiezasProgenitor1,listaPiezasProgenitor2,primerCorte,segundoCorte);
@@ -496,7 +524,11 @@ public class Genetico {
     }
 
     private boolean isNumeric(String s) {
-        return s != null && s.matches("[-+]?\\d*\\.?\\d+");
+        String numerico = s;
+        if(s.contains(ROTACION)){
+            numerico = (s.split(ROTACION))[0];
+        }
+        return numerico != null && numerico.matches("[-+]?\\d*\\.?\\d+");
     }
 
     private void intercambiarGenes(Cromosoma cromosoma, int indice1, int indice2){

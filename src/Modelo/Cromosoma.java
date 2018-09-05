@@ -6,9 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import static Modelo.Constantes.ESPACIO_PIEZA_VACIA;
-import static Modelo.Constantes.ROTACION_HORIZONTAL;
-import static Modelo.Constantes.ROTACION_VERTICAL;
+import static Modelo.Constantes.*;
 
 public class Cromosoma {
 
@@ -50,15 +48,24 @@ public class Cromosoma {
         listaGenes.add(""+idPieza);
     }
 
-    private boolean isNumeric(String s) {
-        return s != null && s.matches("[-+]?\\d*\\.?\\d+");
+    private boolean isNumeric(String gen) {
+        String caracterNumerico = gen;
+        if(gen.contains(ROTACION)){
+            caracterNumerico = (gen.split(ROTACION))[0];
+        }
+        return caracterNumerico != null && caracterNumerico.matches("[-+]?\\d*\\.?\\d+");
     }
+
 
 
     public List<String> separarPiezas(){
         List<String> listaPiezas = new ArrayList<String>();
         for(String gen : listaGenes){
-            if(isNumeric(gen)){
+            String caracterNumerico = gen;
+            if(gen.contains(ROTACION)){
+                caracterNumerico = (gen.split(ROTACION))[0];
+            }
+            if(isNumeric(caracterNumerico)){
                 listaPiezas.add(gen);
             }
         }
@@ -71,8 +78,13 @@ public class Cromosoma {
         System.out.println("tam lista genes: "+listaGenes.size());
         System.out.println("tam lista piezas: "+listaPiezas.size());
         for(int i=0; i< listaGenes.size();i++){
-            if(isNumeric(listaPiezas.get(i))){
-                listaPiezas.remove(i);
+            String gen = listaPiezas.get(i);
+            String caracterNumerico = gen;
+            if(gen.contains(ROTACION)){
+                caracterNumerico = (gen.split(ROTACION))[0];
+            }
+            if(isNumeric(caracterNumerico)){
+                listaPiezas.remove(gen);
                 listaPiezas.add(i,ESPACIO_PIEZA_VACIA);
             }
         }
@@ -88,7 +100,11 @@ public class Cromosoma {
     public int cantidadPiezas(){
         int cantidadPiezas = 0;
         for(String gen : listaGenes){
-            if(isNumeric(gen)){
+            String caracterNumerico = gen;
+            if(gen.contains(ROTACION)){
+                caracterNumerico = (gen.split(ROTACION))[0];
+            }
+            if(isNumeric(caracterNumerico)){
                 cantidadPiezas++;
             }
         }
@@ -98,7 +114,7 @@ public class Cromosoma {
     public int cantidadOperadores(){
         int cantidadOperadores = 0;
         for(String gen : listaGenes){
-            if(!isNumeric(gen)){
+            if((!isNumeric(gen))){
                 cantidadOperadores++;
             }
         }
@@ -138,15 +154,32 @@ public class Cromosoma {
                 area = nodoDerecho.getArea();
                 area += nodoIzquierdo.getArea();
                 nodo.setArea(area);
+                nodo.setAlto(nodoDerecho.getAlto() + nodoIzquierdo.getAlto());
+                nodo.setAncho(nodoDerecho.getAncho() + nodoIzquierdo.getAncho());
                 nodo.setIzquierdo(nodoIzquierdo);
                 nodo.setDerecho(nodoDerecho);
                 pilaNodos.push(nodo);
             }else{
-                int idPieza = Integer.parseInt(gen);
+                String caracterNumerico = gen;
+                if(gen.contains(ROTACION)){
+                    caracterNumerico = (gen.split(ROTACION))[0];
+                }
+                int idPieza = Integer.parseInt(caracterNumerico);
                 Rectangulo pieza = buscarPieza(listaPiezas,idPieza);
                 nodo.setRectangulo(pieza);
                 nodo.setTipoIntegracion(null);
-                nodo.setArea(pieza.getAlto()*pieza.getAncho());
+                Double ancho;
+                Double alto;
+                if(gen.length() == LONGITUD_GEN_ROTACION){
+                    ancho = pieza.getAlto();
+                    alto = pieza.getAncho();
+                }else{
+                    ancho = pieza.getAncho();
+                    alto = pieza.getAlto();
+                }
+                nodo.setAncho(ancho);
+                nodo.setAlto(alto);
+                nodo.setArea(ancho*alto);
                 pilaNodos.push(nodo);
             }
 
